@@ -2,6 +2,8 @@ defmodule HelloSocketWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
+  channel "ping", HelloSocketWeb.PingChannel
+  channel "wild", HelloSocketWeb.WildcardChannel
   # channel "room:*", HelloSocketWeb.RoomChannel
 
   # Socket params are passed from the client and can
